@@ -68,7 +68,8 @@ cd ecommerce-web
 npm install
 
 # 4️⃣ Start the development server
-npm run dev
+npm run dev 
+Then open 👉 http://localhost:5173
 
 ---
 
