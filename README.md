@@ -1,73 +1,109 @@
-# React + TypeScript + Vite
+# 🛍️ Ecommerce-Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive **E-commerce Web Application** built using **ReactJS + TypeScript + Redux**.  
+It allows users to explore products, view detailed product information, apply category filters, sort items, and manage their shopping cart — all with smooth navigation and state persistence.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 **[Visit the Live App on Netlify](https://papaya-stardust-6b9a90.netlify.app/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧠 Features
 
-## Expanding the ESLint configuration
+✅ **Product Grid Display**  
+- Displays all products in a clean, responsive grid.  
+- Each card includes product image, title, and price.  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ **Product Detail Page**  
+- Uses dynamic routing `/product/:id/details`.  
+- Displays full product information (image, description, price).  
+- “Add to Cart” and “Go to Cart” buttons included.  
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+✅ **Filtering & Sorting**  
+- Filter products by multiple categories.  
+- Sort by price (low → high / high → low).  
+- State persists on refresh and works with back navigation (URL-based filters).  
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+✅ **Cart Management**  
+- Add/remove products easily.  
+- “Clear Cart” button to empty all items.  
+- Shows total items and total cart value dynamically.  
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+✅ **Responsive Design**  
+- Fully optimized for mobile, tablet, and desktop.  
+- Smooth animations and consistent UI.  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✅ **Navigation**  
+- Navigate between Home, Product Details, and Cart.  
+- Back button from details page returns you to previous view.  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|-----------|---------------|
+| **Frontend** | ReactJS, TypeScript |
+| **State Management** | Redux Toolkit |
+| **Styling** | CSS3 (Modular, Responsive, Animated) |
+| **Routing** | React Router DOM |
+| **API** | [FakeStoreAPI](https://fakestoreapi.com/) |
+| **Build Tool** | Vite / Create React App |
+
+---
+
+## ⚙️ Setup & Installation
+
+Follow these steps to run the app locally:
+
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/ecommerce-web.git
+
+# 2️⃣ Navigate to the project folder
+cd ecommerce-web
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
+npm run dev
+
+---
+
+## 📂 Folder Structure
+📦 ecommerce-web
+ ┣ 📂 src
+ ┃ ┣ 📂 components     # Reusable UI components (Navbar, Filters, ProductCard, etc.)
+ ┃ ┣ 📂 pages          # Main pages (Home, Cart, ProductDetail)
+ ┃ ┣ 📂 store          # Redux slices & hooks
+ ┃ ┣ 📜 App.tsx        # Root component
+ ┃ ┣ 📜 main.tsx       # Entry point
+ ┃ ┣ 📜 styles.css     # Global styling
+ ┗ 📜 package.json
+
+ ---
+
+## 🌟 Additional Features Implemented
+
+- Modern animated logo and navbar.
+- Animated empty cart state with vector illustration.
+- Polished responsive UI with hover effects and transitions.
+- Centralized global state with Redux Toolkit.
+- Smooth UX with subtle micro-interactions.
+
+---
+
+## 💬 Contributing
+
+- Feel free to fork this repository and enhance it further.
+- Suggestions and pull requests are welcome! 🤝
+
+---
+
+🧑‍💻 Author
+
+Aman Mishra
+💼 Frontend Developer | React | TypeScript | Redux
+📧 [amanmishra80045@gmail.com]
